@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab One
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   {{misaludo}}
+   <ion-label>{{"hello" | translate}}</ion-label>
+<H1>{{"close" | translate}}</H1>
+<ion-button (click)="cambio()">Cambiar!!!</ion-button>
+<ion-button (click)="cambio2()">Cambiar!!!</ion-button>
+<ion-button (click)="this.logout()">Cerrar</ion-button>
+<ion-img [src]="this.auth.user.imageUrl"></ion-img>
+  
+
+</ion-content>
